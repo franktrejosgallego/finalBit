@@ -1,0 +1,38 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Sistema Ventas",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franktrejosgallego/ventasMEan.git"
+  },
+  "keywords": [
+    "Practica",
+    "FullStack",
+    "Mean"
+  ],
+  "author": "Ing. Frank Trejos",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/franktrejosgallego/ventasMEan/issues"
+  },
+  "homepage": "https://github.com/franktrejosgallego/ventasMEan#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
