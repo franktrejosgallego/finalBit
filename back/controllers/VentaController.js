@@ -11,13 +11,13 @@ function registrar(req,res){ // Funcion registrar
     venta.save((err,venta_save)=>{
         if(venta_save){
             let detalles = data.detalles;
-            // Este for each es para cada elemento, es decir recorre la tabla
+            // Este for each es para cada elemento, es decir recorre la tablals
             detalles.forEach((element,index) => {
                 var detalleventa = new DetalleVenta();
                 detalleventa.idproducto = element.idproducto;
                 detalleventa.cantidad = element.cantidad;
                 detalleventa.venta = venta_save._id;
-                // funcion para grabar el detalle d ela vena
+                // funcion para grabar el detalle de la venta
                 detalleventa.save((err,detalle_save)=>{
                     if(detalle_save){
                         Producto.findById({_id:element.idproducto},(err,producto_data)=>{

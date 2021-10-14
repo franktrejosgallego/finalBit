@@ -3,6 +3,7 @@ var clienteController = require('../controllers/ClienteController');
 
 var api = express.Router();
 
+// Api para el CRUD con los métodos post, get, put y delete
 api.get('/clientes',clienteController.listar);
 api.post('/cliente/registrar',clienteController.registrar);
 api.put('/cliente/editar/:id',clienteController.editar);

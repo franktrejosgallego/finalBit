@@ -9,7 +9,7 @@ function listar(req,res){
         }
     })
 }
-
+// Obtiene la data del cliente
 function get_cliente(req,res){
     var id = req.params['id'];
 

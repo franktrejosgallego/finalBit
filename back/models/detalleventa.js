@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose')
 var Schema = mongoose.Schema;
 
 var DetalleVentaSchema = Schema({
@@ -7,4 +7,4 @@ var DetalleVentaSchema = Schema({
     venta: {type:Schema.ObjectId, ref:'venta'}
 });
 
-module.exports = mongoose.model('detalleventa',DetalleVentaSchema);
+module.exports = mongoose.model('detalleventa',DetalleVentaSchema)
